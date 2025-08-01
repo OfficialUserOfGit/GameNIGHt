@@ -6,36 +6,36 @@ class TournamentGame {
         ];
         
         this.categories = [
-            "THUMB WRESTLE",
             "Best at cooking",
-            "Staring Contest",
-            "DANCE BATTLE",
-            "Most Gay",
-            "Biggest Gooner",
-            "Stand on one foot",
+            "Most likely to become famous",
+            "Best dancer",
+            "Most likely to win a trivia contest",
+            "Most likely to travel the world",
+            "Best at telling jokes",
             "Most likely to become a millionaire",
             "Best at keeping secrets",
             "Most likely to win a reality TV show",
             "Best at giving advice",
             "Most likely to become a superhero",
-            "Kindest soul",
-            "Stand on one foot",
-            "Most Pushups",
-            "Come up with the best invention",
-            "Try to make each other laugh without sound.",
-            "Go back and forth saying rhyming words until someone fails.",
-            "Most Racist",
-            "Blow a tissue in the air and keep it from touching the ground.",
-            "Fattest",
+            "Best at organizing events",
+            "Most likely to write a bestselling book",
+            "Best at making friends",
+            "Most likely to invent something amazing",
+            "Best at sports",
+            "Most likely to become a teacher",
+            "Best at solving puzzles",
+            "Most likely to start their own business",
+            "Most likely to become a YouTuber",
             "Best at karaoke",
             "Most likely to win a hot dog eating contest",
             "Best at parallel parking",
-            "Become a Comedian",
+            "Most likely to become a stand-up comedian",
             "Best at remembering birthdays",
             "Most likely to survive on a deserted island",
-            "Pretend to be Obama",
+            "Best at giving pep talks",
             "Most likely to become a professional gamer",
-            "Arm Wrestle"
+            "Best at making people laugh",
+            "Most likely to become an artist"
         ];
         
         this.usedCategories = [];
@@ -269,6 +269,7 @@ let game;
 document.addEventListener('DOMContentLoaded', () => {
     game = new TournamentGame();
 });
+
 
 
 
