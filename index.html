@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Voting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="start-screen" class="screen">
+            <h1>🏆 BEAT UP LIST CHAMPION</h1>
+            <p>30 rounds of head-to-head competition</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+
+        <div id="host-intro" class="screen hidden">
+            <div class="host-container">
+                <img id="host-image" src="images/dave.png" class="host-image" alt="Dave - Host">
+                <div class="host-speech">
+                    <h2>Welcome to the Beater Tournament!</h2>
+                    <p>I will be The Host</p>
+                    <p>30 rounds, and the winner gets a prize</p>
+                    <button id="continue-btn" class="host-btn">Let's Begin! 🎉</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div id="round-counter"></div>
+            <div id="category"></div>
+            <div id="versus-container">
+                <div id="player1" class="player-option">
+                    <img src="images/default.png" class="player-image" alt="Player 1">
+                    <div class="player-name"></div>
+                    <button class="shuffle-btn" onclick="event.stopPropagation(); game.shufflePlayer(1)">🔄 Shuffle</button>
+                </div>
+                <div class="vs">VS</div>
+                <div id="player2" class="player-option">
+                    <img src="images/default.png" class="player-image" alt="Player 2">
+                    <div class="player-name"></div>
+                    <button class="shuffle-btn" onclick="event.stopPropagation(); game.shufflePlayer(2)">🔄 Shuffle</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="celebration" class="screen hidden">
+            <div class="celebration-content">
+                <h1>🎉 WINNER! 🎉</h1>
+                <img src="images/default.jpg" class="celebration-image" alt="Winner">
+                <div class="celebration-name"></div>
+                <div class="confetti"></div>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen hidden">
+            <div id="confetti-container"></div>
+            
+            <div class="winner-section">
+                <h1 class="champion-title">🏆 THE BIGGEST BEATER 🏆</h1>
+                <div class="winner-display">
+                    <img id="winner-image" src="images/default.png" class="champion-image" alt="Champion">
+                    <div class="winner-info">
+                        <div id="winner-name" class="champion-name"></div>
+                        <div class="crown">👑</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-section">
+                <h2>Final Standings</h2>
+                <div id="leaderboard"></div>
+                <button onclick="location.reload()" class="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
